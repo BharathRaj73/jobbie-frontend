@@ -7,8 +7,9 @@ import LandingPage from './pages/LandingPage';
 import SharedLayout from './pages/SharedLayout';
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <div className='dark:bg-slate-800'>
+      <BrowserRouter>
+      <Routes >
         <Route path='/' element={<LandingPage />} />
         <Route path='/register' element={<Register />} />
         <Route path='/dashboard' element={<SharedLayout />}>
@@ -18,6 +19,8 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </div>
+    
   );
 }
 

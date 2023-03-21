@@ -11,6 +11,7 @@ import { Parallax } from 'react-parallax';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import ThemeSwitcher from '../components/ThemeSwitcher';
 
 function Home() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function Home() {
     <>
       {/* home container */}
       <div className='home stickey flex flex-col w-[100%]'>
+
         <div className='entry w-full h-[90vh] bg-[#355C7D] flex flex-col items-center justify-center'>
           <h1 className='text-slate-100 text-xxxl'>Job-bie</h1>
           <h4 className='text-3xl text-slate-50 space-x-2'>Make it Easy</h4>
